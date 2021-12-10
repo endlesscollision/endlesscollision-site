@@ -1,0 +1,279 @@
+*{outline: none;}
+body{font-family: 'Josefin Sans', sans-serif; margin: 0; padding: 0; color: #fff; font-size: 18px; width: 100%; min-width: 320px;}
+.container{width: 1100px; margin: 0 auto; overflow: hidden;}
+ul{padding: 0; margin: 0; list-style: none;}
+ul li{float: left;}
+a{color: #fff; text-decoration: none;}
+
+header{background: url(img/header.jpg) no-repeat top; height: 112px;}
+header .logo{width: 280px; float: left;}
+header .logo a{display: block; width: 250px; margin-top: 25px;}
+header .logo a img{pointer-events: none;}
+
+header .menu{width: 820px; float: left;}
+header .menu ul{padding: 45px 0 0;}
+header .menu ul li a{display: block; padding: 0 12px 15px;}
+header .menu ul li a:hover{text-shadow: 0 0 1px #fff; background: url(img/header_a.png) no-repeat bottom;}
+header .menu ul li:last-child a{opacity: 0.4; background: none; text-shadow: none; padding-right: 0;}
+header .navBurger, header .overlayMenu{display: none;}
+
+#home{background: url(img/home.jpg) no-repeat top; height: 673px;}
+#home .home_content{padding: 205px 0 0 520px;}
+#home h2{color: #000; margin: 0; font-weight: 700; font-size: 48px;}
+#home p{margin: 10px 0 20px; color: #000; font-size: 30px;}
+#home a.open-popup{display: block; width: 231px; height: 57px; background: url(img/home_a.png) no-repeat top; font-size: 24px; text-align: center; padding-top: 19px; box-sizing: border-box; font-weight: 700;}
+#home a.open-popup:hover{background: url(img/home_a_hover.png) no-repeat top;}
+
+#home .popup-bg{position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: none; z-index: 99999;}
+#home .popup{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 500px; height: 300px; background: url(img/dialog.jpg) repeat top; padding: 35px; box-sizing: border-box; border: none; border-radius: 30px;}
+
+#home .close-popup{color: #fff; background: none; font-size: 24px; border: none; cursor: pointer; position: absolute; top: 10px; right: 20px;}
+#home .popup p{font-size: 36px; color: #fff !important; text-align: center;}
+
+#home form .button1{width: 96px; height: 52px; box-sizing: border-box; display: block; margin: 15px; float: left; background: url(img/dialog1.png) no-repeat top; border: none; font-size: 30px; color: #fff;}
+#home form .button1:hover{background: url(img/dialog2.png) no-repeat top; color: #000;}
+#home form .button2{display: block; margin: 15px auto 0; width: 231px; height: 57px; background: url(img/dialog_modal.png) no-repeat top; font-size: 24px; text-align: center; box-sizing: border-box; font-weight: 700; border: none; cursor: pointer; color: #000; float: none; clear: both;}
+#home form .button2:hover{background: url(img/dialog_modal_hover.png) no-repeat top;}
+#home .dialog_button{overflow: hidden;}
+
+#info{background: url(img/info.jpg) no-repeat top; height: 700px;}
+#info .info_content{width: 380px; float: left;}
+#info h3{margin: 170px 0 0; font-weight: 700; font-size: 48px;}
+#info p{margin: 10px 0 20px 0; font-size: 24px; line-height: 33px;}
+#info a{display: block; width: 231px; height: 57px; color: #000; background: url(img/info_a.png) no-repeat top; font-size: 24px; text-align: center; padding-top: 19px; box-sizing: border-box; font-weight: 700;}
+#info a:hover{background: url(img/info_a_hover.png) no-repeat top;}
+#info img{display: block; float: right; margin: 78px 91px 0 0; pointer-events: none; animation: right 7s linear 0s infinite;}
+
+#token{background: url(img/token.jpg) no-repeat top; height: 868px;}
+#token .container{overflow: visible; height: 868px;}
+#token h3{color: #fff; font-weight: 700; font-size: 48px; margin: 0; padding: 130px 0 0;}
+
+#token .token_percent{width: 350px; float: left; padding-top: 50px;}
+#token .token_percent ul{display: flex; flex-wrap: wrap;}
+#token .token_percent ul li{height: 117px; background: url(img/token_percent_left.png) no-repeat left center, url(img/token_percent_right.png) no-repeat right center; margin-bottom: 20px;}
+#token .token_percent ul li.active{background: url(img/token_percent_left_hover.png) no-repeat left center, url(img/token_percent_right_hover.png) no-repeat right center;}
+#token .token_percent ul li.active .chart-percent{color: #b3250f;}
+#token .token_percent ul li:nth-child(1){order: 4; flex-basis: 170px; position: relative; left: 10px;}
+#token .token_percent ul li:nth-child(2){order: 5; flex-basis: 330px;}
+#token .token_percent ul li:nth-child(3){order: 3; flex-basis: 170px;}
+#token .token_percent ul li:nth-child(4){order: 1; flex-basis: 330px;}
+#token .token_percent ul li:nth-child(5){order: 2; flex-basis: 330px;}
+#token .token_percent ul li .chart-percent{font-size: 24px; font-weight: 700; display: block; padding: 35px 30px 0;}
+#token .token_percent ul li:nth-child(1) .chart-percent, #token .token_percent ul li:nth-child(3) .chart-percent{padding-top: 25px;}
+#token .token_percent ul li .chart-sublabel{font-size: 18px; display: block; padding: 0 30px;}
+
+#token canvas{width: 500px !important; height: auto !important; position: relative; top: 127px; right: 25px;}
+#token canvas span, #token canvas p{font-size: 24px !important;}
+
+#token .token_info{width: 390px; float: right; position: relative; bottom: 200px; left: 90px;}
+#token .token_info ul{overflow: hidden;}
+#token .token_info ul li{width: 235px; height: 80px; margin-bottom: 20px; background: url(img/token_percent_left_hover.png) no-repeat left center;}
+#token .token_info ul li:nth-child(1), #token .token_info ul li:nth-child(3){width: 155px;}
+#token .token_info ul li p{padding: 0 0 0 30px;}
+#token .token_info ul li p span{display: block; font-weight: 700; font-size: 24px; margin-top: 5px;}
+#token .token_info p{clear: both; padding: 0 0 0 10px;}
+
+#nft_road{background: url(img/nft_road.jpg) no-repeat top; height: 1851px;}
+
+#nft{height: 1085px;}
+#nft h3{color: #fff; font-weight: 700; font-size: 48px; margin: 110px 0 0;}
+#nft .slider-for{width: 730px; height: 730px; margin-top: 60px; float: left;}
+#nft .slider-nav{width: 370px; height: 1010px; float: right;}
+#nft .slider-nav{position: relative; bottom: 115px;}
+#nft .slider-nav .slick-track{top: 320px;}
+#nft .slider-nav .draggable{height: 910px !important;}
+#nft .slick-slide{text-align: center;}
+#nft .nft_slide_bg_1{background: url(img/nft_1.png) no-repeat top; width: 659px; height: 659px; animation: right 30s linear 0s infinite; float: right; margin-right: 40px; position: relative;}
+#nft .nft_slide_bg_2{background: url(img/nft_2.png) no-repeat center center; width: 659px; height: 659px; animation: left 15s linear 0s infinite;}
+#nft .nft_slide_bg_1 img{animation: right 30s linear 0s infinite; position: absolute; margin: auto; left: 0; top: 0; bottom: 0; right: 0; border-radius: 1000px;}
+#nft .nft_slide_bg_3{background: url(img/nft_3.png) no-repeat center center; width: 659px; height: 659px;}
+#nft .nft_slide_bg_4{background: url(img/nft_4.png) no-repeat center center; width: 108px; height: 108px; float: right; margin: 7px 78px 7px 0; position: relative;}
+#nft .nft_slide_bg_4 img{width: 75%; height: 75%; border-radius: 500px; position: absolute; margin: auto; left: 0; top: 0; bottom: 0; right: 0;}
+#nft .slick-current .nft_slide_bg_4{background: url(img/nft_5.png) no-repeat center center; width: 243px; height: 243px; float: right; margin: 7px 10px 7px 0;}
+#nft .slick-current .nft_slide_bg_4 img{width: 80%; height: 80%;}
+#nft .nft_0{display: none;}
+
+#road{height: 766px;}
+#road h3{color: #fff; font-weight: 700; font-size: 48px; margin: 110px 0 0;}
+#road .nk-block{margin-top: 90px;}
+#road .owl-carousel .owl-item{float: left; text-align: center;}
+#road .owl-carousel .owl-item h4{font-size: 24px;}
+#road .owl-carousel .owl-item p{padding: 0 20px; line-height: 1.5;}
+#road .owl-stage-outer{overflow: hidden;}
+#road .owl-nav{display: flex; justify-content: center; clear: both; margin-top: 30px;}
+#road .owl-prev{width: 50px; height: 50px; border: none; background: url(img/road_left.png) no-repeat top; margin: 0 10px; cursor: pointer;}
+#road .owl-prev.disabled{background: url(img/road_left_dis.png) no-repeat top;}
+#road .owl-next{width: 50px; height: 50px; border: none; background: url(img/road_right.png) no-repeat top; margin: 0 10px; cursor: pointer;}
+#road .owl-next.disabled{background: url(img/road_right_dis.png) no-repeat top;}
+#road .road1{width: 100%; height: 73px; background: url(img/road1.png) no-repeat top;}
+#road .road2{width: 100%; height: 73px; background: url(img/road2.png) no-repeat top;}
+#road .road3{width: 100%; height: 73px; background: url(img/road3.png) no-repeat top;}
+#road .road_bg{position: relative; bottom: 450px; display: block; float: right;}
+
+#faq{background: url(img/faq.jpg) no-repeat top; height: 667px;}
+#faq h3{color: #000; font-weight: 700; font-size: 48px; margin: 120px 0 0;}
+
+#faq .set{position: relative; width: 100%; height: auto;}
+#faq .set > a{display: block; background: url(img/faq_q.png) no-repeat top; padding: 20px 20px 20px 55px; text-decoration: none; color: #fff; font-size: 24px; -webkit-transition:all 0.2s linear; -moz-transition:all 0.2s linear; transition:all 0.2s linear;}
+#faq .set > a.active{background: url(img/faq_q_hover.png) no-repeat top; text-shadow: 0 0 1px #fff;}
+#faq .sn-accordion-container{position: relative; width: 100%; height: auto; margin: 75px auto 0;}
+#faq .content{position:relative; width: 100%; height: auto; color: #8e1f11; font-size: 24px; display: none; padding-left: 55px; font-weight: 700;}
+#faq .content p{margin: 25px 0 5px;}
+
+footer{background: url(img/footer.jpg) no-repeat top; height: 273px; padding: 60px 0; box-sizing: border-box;}
+footer .logo{width: 50%; float: left;}
+footer .logo a{display: block; width: 475px;}
+footer .logo a img{pointer-events: none;}
+
+footer .social{width: 50%; float: right; padding-top: 30px;}
+footer .social a{display: block; float: right; margin-left: 15px;}
+footer .social a:nth-child(1){background: url(img/med.png) no-repeat top; width: 45px; height: 26px;}
+footer .social a:nth-child(1):hover{background: url(img/med_hover.png) no-repeat top;}
+footer .social a:nth-child(2){background: url(img/dis.png) no-repeat top; width: 35px; height: 26px;}
+footer .social a:nth-child(2):hover{background: url(img/dis_hover.png) no-repeat top;}
+footer .social a:nth-child(3){background: url(img/inst.png) no-repeat top; width: 26px; height: 26px;}
+footer .social a:nth-child(3):hover{background: url(img/inst_hover.png) no-repeat top;}
+footer .social a:nth-child(4){background: url(img/tw.png) no-repeat top; width: 30px; height: 26px;}
+footer .social a:nth-child(4):hover{background: url(img/tw_hover.png) no-repeat top;}
+
+footer .menu{width: 870px; float: left;}
+footer .menu ul{padding: 40px 0 0 115px;}
+footer .menu ul li a{display: block; padding: 0 15px 15px;}
+footer .menu ul li a:hover{color: #c52810; text-shadow: 0 0 1px #c52810; background: url(img/header_a.png) no-repeat bottom;}
+
+footer .copyright{width: 230px; float: right; padding: 40px 0 0;}
+footer .copyright p{margin: 0;}
+
+@keyframes right {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@keyframes left {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
+}
+
+@media (max-width: 1299px){
+	h2, h3{font-size: 30px !important;}
+	.container{width: 320px; overflow: hidden;}
+	body{padding-top: 65px;}
+	header{height: 65px; width: 100%; position: fixed; top: 0; z-index: 9999;}
+	header .logo a{margin: 0; width: 160px; position: absolute; top: 12px; left: 20px;}
+	header .logo a img{width: 100%;}
+	header .menu>ul{display: none;}
+	header #mob_menu{padding-top: 3px !important;}
+	header #mob_menu li a{font-size: 24px !important; background: #000 !important; color: #fff !important; padding: 1px 20px !important; text-align: left; width: 100%; float: left; text-transform: uppercase; margin-bottom: 3px;}
+	header #mob_menu li a:hover{background: #000 !important; color: #c52810 !important; outline: none; transform: none;}
+	header #mob_menu li a.menu_first{background: #4b58c8 !important;}
+	header .navBurger, header .overlayMenu{display: block;}
+	.navBurger{position: absolute; right: 20px; top: 20px; cursor: pointer; background: #fff; -webkit-box-sizing: border-box; box-sizing: border-box; background-clip: content-box; width: 40px; height: 26px; border-top: 11px solid transparent; border-bottom: 11px solid transparent; -webkit-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: all 0.25s ease-in-out; transition: all 0.25s ease-in-out;}
+	.navBurger:before, .navBurger:after{content: ""; position: absolute; background: #fff; height: 4px; width: 100%; right: 0; will-change: rotate; -webkit-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: all 0.5s ease; transition: all 0.5s ease;}
+	.navBurger:before{top: -12px;}
+	.navBurger:after{bottom: -12px;}
+	.navBurger.active{background: transparent; background-clip: content-box; position: fixed;}
+	.navBurger.active:before{-webkit-transform: rotate(135deg); transform: rotate(135deg); top: 0; background: #eee; width: 110%;}
+	.navBurger.active:after{bottom: 0; -webkit-transform: rotate(-135deg); transform: rotate(-135deg); background: #eee; width: 110%;}
+	.overlay{position: fixed; background: #000; top: 0; right: 0; width: 100%; height: 100%; opacity: 0; -webkit-transform-origin: right top; transform-origin: right top; -webkit-transform: scale(0); transform: scale(0); visibility: hidden; -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out; overflow: hidden;}
+	.overlay.open{opacity: 1; visibility: visible; -webkit-transform: scale(1); transform: scale(1);}
+	.overlay.open li{display: block; -webkit-animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards; animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards; -webkit-animation-delay: .4s; animation-delay: .4s; -webkit-transform: rotate(-7deg); transform: rotate(-7deg); -webkit-transform-origin: right bottom; transform-origin: right bottom; margin: 5px 0;}
+	.overlay.open li:nth-of-type(2){-webkit-animation-delay: .5s; animation-delay: .5s;}
+	.overlay.open li:nth-of-type(3){-webkit-animation-delay: .6s; animation-delay: .6s;}
+	.overlay.open li:nth-of-type(4){-webkit-animation-delay: .7s; animation-delay: .7s;}
+	.overlay.open li:nth-of-type(5){-webkit-animation-delay: .8s; animation-delay: .8s;}
+	.overlayMenu{position: absolute; top: 20px; left: 20px;}
+	.overlayMenu ul{list-style: none; padding: 0; margin: 0 auto; display: block; position: relative; height: 100%;}
+	.overlayMenu ul li{display: block; position: relative; opacity: 0; width: 100%;}
+	.overlayMenu ul li a{-webkit-transition: .2s; transition: .2s;}
+	.overlayMenu ul li a:hover, .overlayMenu ul li a:active, .overlayMenu ul li a:focus{-webkit-transform: translateX(-2px); transform: translateX(-2px); padding-left: 80px; outline: 1px solid rgba(255, 255, 255, 0.3); background: rgba(255, 255, 255, 0.03);}
+	.locked{overflow: hidden;}
+	@-webkit-keyframes fadeInRight {
+	0% {
+	  opacity: 0;
+	  left: 50px;
+	}
+	100% {
+	  opacity: 1;
+	  left: 0;
+	  -webkit-transform: rotate(0deg);
+	          transform: rotate(0deg);
+	}
+	}
+	@keyframes fadeInRight {
+	0% {
+	  opacity: 0;
+	  left: 50px;
+	}
+	100% {
+	  opacity: 1;
+	  left: 0;
+	  -webkit-transform: rotate(0deg);
+	          transform: rotate(0deg);
+	}
+	}
+	#home{background: url(img/home_mob.jpg) no-repeat bottom; height: 670px;}
+	#home .home_content{padding: 50px 0; text-align: center;}
+	#home p{font-size: 16px; line-height: 24px;}
+	#home a{margin: 0 auto;}
+	#home .popup{width: 300px; height: 400px; padding: 35px 20px;}
+	#home button{float: none !important; margin: 10px auto !important;}
+	#home .dialog_button{width: 260px;}
+	#home p{font-size: 20px !important;}
+	#home .close-popup{top: 5px; right: 15px;}
+	#token{background: #310c06; padding-bottom: 50px; height: auto; text-align: center;}
+	#token .container{height: auto;}
+	#token h3{padding-top: 50px;}
+	#token canvas{display: none !important;}
+	#token .token_percent{width: 100%; float: none;}
+	#token .token_percent ul li{float: none; flex-basis: 100% !important;}
+	#token .token_percent ul li .chart-sublabel{font-size: 16px;}
+	#token .token_percent ul li:nth-child(3), #token .token_percent ul li:nth-child(4){width: 100%;}
+	#token .token_percent ul li:nth-child(1) .chart-percent, #token .token_percent ul li:nth-child(3) .chart-percent{padding-top: 35px;}
+	#token .token_percent ul li:nth-child(1){left: 0;}
+	#token .token_percent ul li:hover{background: url(img/token_percent_left_hover.png) no-repeat left center, url(img/token_percent_right_hover.png) no-repeat right center;}
+	#token .token_percent ul li:hover .chart-percent{color: #b3250f;}
+	#token .token_info{width: 100%; float: none; left: 0; bottom: 0;}
+	#token .token_info ul li:nth-child(1), #token .token_info ul li:nth-child(3){width: 100%;}
+	#token .token_info ul li{width: 100%; float: none; background: url(img/token_percent_left_hover.png) no-repeat left center, url(img/token_percent_right_hover.png) no-repeat right center; height: 117px;}
+	#token .token_info ul li p{padding: 35px 0 0; font-size: 16px;}
+	#nft_road{height: auto;}
+	#nft{background: #000; padding-bottom: 20px; height: 420px;}
+	#nft h3{text-align: center; margin-top: 50px;}
+	#nft .slider-for{width: 270px; height: 250px; margin-top: 0;}
+	#nft .nft_slide_bg_1{width: 270px; height: 270px; background-size: 270px; margin: 50px 0 0; animation: none;}
+	#nft .nft_slide_bg_2{width: 270px; height: 270px; background-size: 230px; animation: none;}
+	#nft .nft_slide_bg_3{width: 270px; height: 270px; background-size: 235px;}
+	#nft .nft_slide_bg_1 img{width: 215px; height: 215px; animation: none;}
+	#nft .slider-nav{width: 50px; height: 345px; bottom: 20px;}
+	#nft .nft_slide_bg_4{width: 38px; height: 38px; background: none; margin: 2px auto; border-radius: 50px; float: none;}
+	#nft .slick-current .nft_slide_bg_4{width: 48px; height: 48px; background: none; margin: 2px 0; border-radius: 50px; border: 1px solid #fff; box-sizing: border-box;}
+	#nft .slick-current .nft_slide_bg_4 img{width: 100%; height: 100%;}
+	#nft .slider-nav .draggable{height: 345px !important;}
+	#nft .slider-nav .slick-track{top: 125px;}
+	#road{background: #000; height: auto; padding-bottom: 50px;}
+	#road h3{margin-top: 50px; text-align: center;}
+	#road .nk-block{margin-top: 20px;}
+	#road .road_bg{display: none;}
+	#road .owl-carousel .owl-item h4{font-size: 20px;}
+	#road .owl-carousel .owl-item p{font-size: 16px; line-height: 24px;}
+	#info{background: url(img/faq_mob.png) no-repeat center bottom 20px , #000; height: 650px;}
+	#info h3{margin-top: 50px;}
+	#info .info_content{width: 100%; text-align: center;}
+	#info p{font-size: 16px; line-height: 24px;}
+	#info a{margin: 0 auto 50px;}
+	#info img{margin: 0 auto; width: 265px; float: none;}
+	#faq{background: url(img/faq_mob.jpg) no-repeat top; height: auto; padding-bottom: 50px;}
+	#faq h3{text-align: center; margin-top: 50px;}
+	#faq .sn-accordion-container{margin-top: 40px;}
+	#faq .set > a{font-size: 14px; padding-left: 15px; background: url(img/faq_q_mob.jpg) no-repeat top; height: 55px; box-sizing: border-box;}
+	#faq .set > a.active{background: url(img/faq_q_mob_hover.jpg) no-repeat top;}
+	#faq .content{font-size: 14px; padding-left: 15px; padding-right: 15px; box-sizing: border-box;}
+	footer{padding: 30px 0; height: 235px;}
+	footer .logo{width: 100%; float: none;}
+	footer .logo a{width: 100%;}
+	footer .logo a img{width: 100%;}
+	footer .social{width: 185px; float: none; margin: 0 auto; overflow: hidden;}
+	footer .social a:last-child{margin-left: 0;}
+	footer .menu{display: none;}
+	footer .copyright{float: none; margin: 0 auto; font-size: 14px; text-align: center;}
+}

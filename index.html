@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Endless collision</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+	<div style="display: none;">
+		<img src="img/home_a_hover.png" alt="">
+		<img src="img/info_a_hover.png" alt="">
+		<img src="img/tw_hover.png" alt="">
+		<img src="img/inst_hover.png" alt="">
+		<img src="img/dis_hover.png" alt="">
+		<img src="img/med_hover.png" alt="">
+		<img src="img/road_left.png" alt="">
+		<img src="img/road_right_dis.png" alt="">
+		<img src="img/token_percent_left.png" alt="">
+		<img src="img/token_percent_right.png" alt="">
+		<img src="img/dialog_modal_hover.png" alt="">
+		<img src="img/dialog.jpg" alt="">
+		<img src="img/dialog2.png" alt="">
+		<img src="img/dialog2.png" alt="">
+		<img src="img/faq_q_hover.png" alt="">
+		<img src="img/faq_q_mob_hover.jpg" alt="">
+	</div>
+	<header id="header">
+		<div class="container">
+			<div class="logo">
+				<a href="#">
+					<img src="img/logo.png" alt="">
+				</a>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="#header">HOME</a></li>
+					<li><a href="#info">GAME INFO</a></li>
+					<li><a href="#nft">NFT</a></li>
+					<li><a href="#road">ROADMAP</a></li>
+					<li><a href="#token">TOKENOMICS</a></li>
+					<li><a href="#faq">FAQ</a></li>
+					<li><a href="#">MARKETPLACE SOON</a></li>
+				</ul>
+				<div class="overlay">
+					<nav class="overlayMenu">
+						<ul id="mob_menu">
+							<li><a href="#">HOME</a></li>
+							<li><a href="#info">GAME INFO</a></li>
+							<li><a href="#nft">NFT</a></li>
+							<li><a href="#road">ROADMAP</a></li>
+							<li><a href="#token">TOKENOMICS</a></li>
+							<li><a href="#faq">FAQ</a></li>
+							<li><a href="#">MARKETPLACE SOON</a></li>
+						</ul>
+					</nav>
+	          </div>
+	          <div class="navBurger" role="navigation" id="navToggle"></div>
+			</div>
+		</div>
+	</header>
+	<div id="home">
+		<div class="container">
+			<div class="home_content">
+				<h2>ENDLESS COLLISION</h2>
+				<p>is a strategy play to earn game centered around the confrontation of demonic alliances who have lost faith in the single ruler of Hell.</p>
+				<a href="##" class="open-popup">MINT TBA</a>
+				<div class="popup-bg">
+				  <div class="popup">
+					<p>0,06 ETH + Gas fee</p>
+					<form>
+						<div class="dialog_button">
+							<button class="button1">1</button>
+							<button class="button1">2</button>
+							<button class="button1">3</button>
+						</div>
+						<button class="button2">Connect wallet</button>
+						<a href="##" class="close-popup">&#10006;</a>
+					</form>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="info">
+		<div class="container">
+			<div class="info_content">
+				<h3>GAME INFO</h3>
+				<p>Endless collision is a game unfolding on the strategy map of Hell's 9th circle. Each of the players owning their own Lord, will be forced to interact with the other players to move up the hierarchy of your Alliance.</p>
+				<a href="http://discord.gg/endlesscollision" target="_blank">MORE INFO</a>
+			</div>
+			<img src="img/info_circle.png" alt="">
+		</div>
+	</div>
+	<div id="token">
+		<div class="container">
+			<h3>TOKENOMICS</h3>			<div class="token_percent">
+				<ul class="chart-data-s2" data-canvas="token-distribution" data-canvas-type="pie" data-border-color="#3c0800">
+				    <li data-color="#250d0a" data-color-hover="#b73520" data-label="Community events" data-title="" data-subtitle="Community events" data-amount="15"></li>
+				    <li data-color="#250d0a" data-color-hover="#b73520" data-label="In-game rewards" data-title="" data-subtitle="In-game rewards" data-amount="60"><div class="chart-data-item"></li>
+				    <li data-color="#250d0a" data-color-hover="#b73520" data-label="Airdrop for NFT holders" data-title="" data-subtitle="Airdrop for NFT holders" data-amount="10"></li>
+				    <li data-color="#250d0a" data-color-hover="#b73520" data-label="Marketing and exchange listings" data-title="" data-subtitle="Marketing and exchange listings" data-amount="10"><div class="chart-data-item"></li>
+				    <li data-color="#250d0a" data-color-hover="#b73520" data-label="Dev team (2 year lock up)" data-title="" data-subtitle="Dev team (2 year lock up)" data-amount="5"></li>
+				</ul>
+			</div>
+			<canvas class="chart-canvas chartjs-render-monitor" id="token-distribution" style="display: block; width: 461px; height: 300px;" width="461" height="300"></canvas>
+			<div class="token_info">
+				<ul>
+					<li>
+						<p>TICKER <span>HELL</span></p>
+					</li>
+					<li>
+						<p>TOTAL INITIAL SUPPLY <span>10 million</span></p>
+					</li>
+					<li>
+						<p>NETWORK <span>Ethereum</span></p>
+					</li>
+				</ul>
+				<p>20% from NFT Sale will go to Hard cap of our token</p>
+			</div>
+		</div>
+	</div>
+	<div id="nft_road">
+		<div id="nft">
+			<div class="container">
+				<h3>NFT</h3>
+				<div class="slider slider-for">
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/1.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/3.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/4.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/5.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/6.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/7.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/8.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/9.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/10.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/11.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/12.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/13.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/14.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/15.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/16.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/17.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_1">
+							<div class="nft_slide_bg_2">
+								<div class="nft_slide_bg_3">
+									<img src="img/18.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slider slider-nav">
+					<div class="nft_0">
+						<div class="nft_slide_bg_4">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/1.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/2.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/3.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/4.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/5.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/6.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/7.jpg" alt="">
+						</div>
+					</div>
+					<div class="nft_1">
+						<div class="nft_slide_bg_4">
+							<img src="img/8.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/9.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/10.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/11.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/12.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/13.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/14.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/15.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/16.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/17.jpg" alt="">
+						</div>
+					</div>
+					<div>
+						<div class="nft_slide_bg_4">
+							<img src="img/18.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="road">
+        	<div class="container">
+        		<h3>ROADMAP</h3>
+        		<div class="nk-block">
+		            <div class="roadmap-wrap roadmap-wrap-ovl-right">
+		                <div class="roadmap-line-s2"></div>
+		                <div class="roadmap-slider has-carousel carousel-nav-center" data-blank="true" data-items="4" data-items-tab-l="1" data-items-tab-p="1" data-items-mobile="1" data-margin="-1" data-navs="true">
+		                    <div class="roadmap roadmap-s2 roadmap-i1 roadmap-finished">
+		                        <h4 class="roadmap-year-s2">STAGE 1. 2021 Q4</h4>
+		                        <div class="road1"></div>
+		                        <div class="roadmap-text">
+		                            <p>
+		                            	Concept creation <br>
+		                            	Art creation <br>
+										Website launch <br>
+										Start of the game development <br>
+										Start of the marketing campaign
+									</p>
+		                        </div>
+		                    </div>
+		                    <div class="roadmap roadmap-s2 roadmap-i2 roadmap-finished">
+		                        <h4 class="roadmap-year-s2">STAGE 2. 2021 Q4</h4>
+		                        <div class="road1"></div>
+		                        <div class="roadmap-text">
+		                            <p>
+										White list opening <br>
+										Moderator Ambassador Programme
+		                            </p>
+		                        </div>
+		                    </div>
+		                    <div class="roadmap roadmap-s2 roadmap-i3 roadmap-finished">
+		                        <h4 class="roadmap-year-s2">STAGE 3. 2021 Q4</h4>
+		                        <div class="road2"></div>
+		                        <div class="roadmap-text">
+		                            <p>
+		                            	Game concept release <br>
+										Game mechanics release <br>
+										Tokenomics release <br>
+										Minting <br>
+										Soldout White list and public sale <br>
+										OpenSea listing
+		                            </p>
+		                        </div>
+		                    </div>
+		                    <div class="roadmap roadmap-s2 roadmap-i4 roadmap-running">
+		                        <h4 class="roadmap-year-s2">STAGE 4. 2021 Q4</h4>
+		                        <div class="road3"></div>
+		                        <div class="roadmap-text">
+		                            <p>
+		                            	NFT reveal <br>
+										Token contract release <br>
+										Airdrop of tokens to active users <br>
+										Airdrop of tokens to moderators <br>
+										Token listing.
+		                            </p>
+		                        </div>
+		                    </div>
+		                    <div class="roadmap roadmap-s2 roadmap-i5">
+		                        <h4 class="roadmap-year-s2">STAGE 5. 2022 Q1</h4>
+		                        <div class="road3"></div>
+		                        <div class="roadmap-text">
+		                            <p>Game alpha version release</p>
+		                        </div>
+		                    </div>
+		                    <div class="roadmap roadmap-s2 roadmap-i5">
+		                        <h4 class="roadmap-year-s2">STAGE 6 TBA 2022 Q2</h4>
+		                        <div class="road3"></div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <img class="road_bg" src="img/road_bg.png" alt="">
+        	</div>
+        </div>
+	</div>
+	<div id="faq">
+		<div class="container">
+			<h3>FAQ</h3>
+			<div class="sn-accordion-container">
+				<div class="set">
+					<a href="##">
+						How many NFTS?
+						<span class="plus"><i class="icon"></i></span>
+					</a>
+					<div class="content">
+						<p>There will be 6666 unique NFT Lords in total. There will always be only 6666.</p>
+					</div>
+				</div>
+				<br>
+				<div class="set">
+					<a href="##">
+						What’s the network?
+						<span class="plus"><i class="icon"></i></span>
+					</a>
+					<div class="content">
+					<p>NFT Lords live and rule on the ETH network</p>
+					</div>
+				</div>
+				<br>
+				<div class="set">
+					<a href="##">
+						How much will it cost to mint an NFT Lord?  
+						<span class="plus"><i class="icon"></i></span>
+					</a>
+					<div class="content">
+					<p>Price for 1 NFT 0.06 ETH (May change depending on the cost of ETH)</p>
+					</div>
+				</div>
+				<br>
+				<div class="set">
+					<a href="##">
+						Smart contract address?
+					</a>
+					<div class="content">
+						<p>TBA</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="logo">
+				<a href="#">
+					<img src="img/footer_logo.png" alt="">
+				</a>
+			</div>
+			<div class="social">
+				<a href="https://medium.com/@endlesscollision" target="_blank"></a>
+				<a href="http://discord.gg/endlesscollision" target="_blank"></a>
+				<a href="https://www.instagram.com/endlesscollision/" target="_blank"></a>
+				<a href="https://twitter.com/End_Collision" target="_blank"></a>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="#header">HOME</a></li>
+					<li><a href="#info">GAME INFO</a></li>
+					<li><a href="#nft">NFT</a></li>
+					<li><a href="#road">ROADMAP</a></li>
+					<li><a href="#token">TOKENOMICS</a></li>
+					<li><a href="#faq">FAQ</a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<p>© 2021 All Rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/faq.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/jquery.bundle.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/charts.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/slider.js"></script>
+</body>
+</html>
